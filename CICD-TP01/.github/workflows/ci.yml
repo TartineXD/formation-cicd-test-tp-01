@@ -28,4 +28,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: unit-tests
-      run: mvn test -Dtest=com.devops.cicd.PricingServiceTest
+      run: mvn -Dstyle.color=always test -f pom.xml
